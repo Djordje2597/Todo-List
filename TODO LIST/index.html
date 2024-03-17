@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Date-->
+    <div class="image-container">
+      <div id="date-container">
+        <h1>Thursday, March 14, 2024</h1>
+      </div>
+    </div>
+    <section class="main-section">
+      <h1>Todo App</h1>
+      <!-- INPUT FIELD -->
+      <form action="" id="todo-form">
+        <input type="text" id="new-input" placeholder="Add here" />
+        <input type="submit" id="submit-btn" value="Submit" />
+      </form>
+      <!-- END OF INPUT FIELD -->
+
+      <!-- LIST -->
+      <div class="list-container">
+        <div class="list">
+          <!--<div class="input-item">
+            <div class="label-div">
+              <input type="checkbox" class="text" id="active-item" />
+              <label for="text">item</label>
+            </div>
+            <div class="list-btns">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </section>
+
+    <button type="button" class="clearAll">Clear everything</button>
+    <p class="alert-message">You have nothing to clear</p>
+
+    <script src="app.js"></script>
+  </body>
+</html>

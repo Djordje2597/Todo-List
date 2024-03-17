@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #151515;
+  color: #ffffff;
+}
+
+section {
+  padding: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  section {
+    width: 100%;
+  }
+}
+
+section h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#todo-form {
+  display: flex;
+}
+
+#new-input,
+#submit-btn {
+  padding: 0.75rem 1rem;
+  border: none;
+  outline: none;
+}
+#new-input {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+#new-input::placeholder {
+  font-weight: 600;
+  font-size: 1rem;
+}
+#submit-btn {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 3rem;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #030303;
+  color: #868484;
+  cursor: pointer;
+}
+#submit-btn:hover {
+  background: #868484;
+  color: #fff;
+}
+.clearAll {
+  width: 100px;
+  margin: 0 auto;
+  padding: 2px;
+  border: transparent;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.clearAll:hover {
+  color: red;
+}
+.alert-message {
+  text-align: center;
+  margin: 5px;
+  display: none;
+}
+.show-message {
+  display: block;
+}
+.list-container {
+  padding: 4rem 0;
+  width: 100%;
+  margin: 0 auto;
+}
+.input-item {
+  display: flex;
+  padding: 15px 5px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #030303;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+label {
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #c5c3c3;
+}
+
+.list {
+  padding: 0rem 1rem;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  visibility: hidden;
+}
+.list-btns {
+  display: flex;
+}
+.show-list {
+  visibility: visible;
+}
+.active-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.done-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  transform: translateX(200%);
+}
+
+.edit,
+.delete {
+  background: none;
+  border: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.edit {
+  color: green;
+}
+.edit:hover {
+  color: greenyellow;
+}
+.delete {
+  color: red;
+}
+.delete:hover {
+  color: #f87b7b;
+}
+
+/* DATE AND IMAGE CONTAINER*/
+
+.image-container {
+  width: 100vw;
+  height: 20vh;
+  background: linear-gradient(to right, rgba(105, 62, 27, 0.3), rgb(20, 16, 13)),
+    url(./images/todo\ work.jpg) center/cover;
+}
+
+#date-container {
+  padding: 20px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+#date-container h1 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
